@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-
+Route::group(['prefix'=>'/slider'], function () {
+    Route::get('/', [SliderController::class, 'index'])->name('slider.index');
+    Route::get('/create', [SliderController::class, 'create'])->name('slider.create');
+    Route::post('/store', [SliderController::class, 'store'])->name('slider.store');
+});

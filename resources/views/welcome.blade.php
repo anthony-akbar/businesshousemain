@@ -3,10 +3,11 @@
 <!-- BEGIN: Head -->
 <head>
     <meta charset="utf-8">
-    <link href="dist/images/logo.svg" rel="shortcut icon">
-    <title></title>
+    <link href="{{asset('dist/images/logo.svg')}}" rel="shortcut icon">
+    <title>Business House KG | Admin</title>
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}"/>
+    @yield('styles')
     <!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
@@ -34,6 +35,7 @@
 
 <!-- BEGIN: JS Assets-->
 <script src="{{ asset('dist/js/app.js') }}"></script>
+@yield('scripts')
 <!-- END: JS Assets-->
 </body>
 </html>
