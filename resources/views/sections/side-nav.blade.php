@@ -164,9 +164,9 @@
             </ul>
         </li>
         <li>
-            <a href="side-menu-light-inbox.html" class="side-menu">
+            <a href="{{route('appartment.index')}}" class="side-menu">
                 <div class="side-menu__icon"><i data-lucide="inbox"></i></div>
-                <div class="side-menu__title"> Inbox</div>
+                <div class="side-menu__title"> Apartment</div>
             </a>
         </li>
         <li>
