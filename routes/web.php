@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AppartmentController;
+use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
@@ -22,8 +22,8 @@ Route::group(['prefix'=>'/slider'], function () {
     Route::get('/create', [SliderController::class, 'create'])->name('slider.create');
     Route::post('/store', [SliderController::class, 'store'])->name('slider.store');
 });
-Route::group(['prefix'=>'/appartment'], function () {
-    Route::get('/', [AppartmentController::class, 'index'])->name('appartment.index');
-    Route::get('/create', [AppartmentController::class, 'create'])->name('appartment.create');
-    Route::post('/store', [AppartmentController::class, 'store'])->name('appartment.store');
+Route::group(['prefix'=>'/apartment'], function () {
+    Route::get('/', [ApartmentController::class, 'index'])->name('apartment.index');
+    Route::get('/create', [ApartmentController::class, 'create'])->name('apartment.create');
+    Route::post('/store', [ApartmentController::class, 'store'])->name('apartment.store');
 });

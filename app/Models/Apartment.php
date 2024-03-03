@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models\back;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Appartment extends Model
+class Apartment extends Model
 {
     use HasFactory;
     use SoftDeletes;
