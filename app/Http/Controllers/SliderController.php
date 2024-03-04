@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SliderRequest;
 use App\Models\Slider;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SliderController extends Controller
 {
@@ -20,6 +22,10 @@ class SliderController extends Controller
 
     public function store(SliderRequest $request) {
         $data = $request->validated();
-        dd($data);
+        $image = Storage::put('/images', $data['image']);
+        unset($data['image']);
+        $data['image'] = $image;
+        Slider::create($data);
+        return redirect()->route('slider.index');
     }
 }

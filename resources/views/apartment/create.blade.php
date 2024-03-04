@@ -9,7 +9,7 @@
 
     <div class="intro-y w-2/3 box p-5">
         <!-- Upload  -->
-        <form method="POST" action="{{ route('appartment.store') }}" id="file-upload-form" class="uploader"
+        <form method="POST" action="{{ route('apartment.store') }}" id="file-upload-form" class="uploader"
               enctype="multipart/form-data">
             @csrf
             <input id="file-upload" type="file" name="image" accept="image/*"/>

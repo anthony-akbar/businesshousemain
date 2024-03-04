@@ -5,7 +5,7 @@
     </h2>
     <div class="grid grid-cols-12 gap-6 mt-5">
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-            <a href="{{route('appartment.create')}}" class="btn btn-primary shadow-md mr-2">Add New Product</a>
+            <a href="{{route('apartment.create')}}" class="btn btn-primary shadow-md mr-2">Add New Product</a>
             <div class="dropdown">
                 <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
                     <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
@@ -35,14 +35,14 @@
                 </div>
             </div>
         </div>
-        @foreach($appartments as $appartment)
+        @foreach($apartments as $apartment)
             <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <div class="box">
                     <div class="p-5">
                         <div
                             class="h-40 2xl:h-56 image-fit rounded-md overflow-hidden before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10 before:bg-gradient-to-t before:from-black before:to-black/10">
                             <img alt="Midone - HTML Admin Template" class="rounded-md"
-                                 src="{{ asset('storage/'.$appartment->image)}}">
+                                 src="{{ asset('storage/'.$apartment->image)}}">
                         </div>
                         <div class="text-slate-600 dark:text-slate-500 mt-5">
                             <div class="flex items-center">
@@ -53,7 +53,7 @@
                                     <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"></path>
                                     <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"></path>
                                 </svg>
-                                Name: {{$appartment->title}}
+                                Name: {{$apartment->title}}
                             </div>
                             <div class="flex items-center mt-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -64,7 +64,7 @@
                                     <polyline points="2 17 12 22 22 17"></polyline>
                                     <polyline points="2 12 12 17 22 12"></polyline>
                                 </svg>
-                                Description: {{$appartment->description}}
+                                Description: {{$apartment->description}}
                             </div>
                         </div>
                     </div>
