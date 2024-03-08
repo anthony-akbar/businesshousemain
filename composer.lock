@@ -3217,7 +3217,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "^v7.0.3",
+            "version": "^7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
