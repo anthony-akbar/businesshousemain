@@ -3217,7 +3217,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "^7.0.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -3230,7 +3230,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
